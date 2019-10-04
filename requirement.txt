@@ -1,18 +1,17 @@
-conda create -n text_mining python=3.5.0 numpy pip matplotlib=2.2.3 ipykernel
-activate text_mining
-pip install pandas nltk sklearn gensim tqdm ipywidgets langdetect seaborn plotly pyldavis
+# Env creation via conda
+conda create -n text_mining python=3.5.0 numpy pip matplotlib ipykernel
 
+# Env activation
+activate text_mining
+
+# Package Installation
+pip install pandas nltk sklearn gensim tqdm ipywidgets langdetect seaborn plotly pyldavis chart-studio
+
+# Enable jupyter kernel
 python -m ipykernel install --user --name text_mining
 
-jupyter nbextension enable --py --sys-prefix widgetsnbextension 
-conda install matplotlib
-
-conda env remove -n text_mining
-
-
-# Env creation via conda
-# Env activation
-# Package Installation
-# Enable jupyter kernel
 # Enable tqdm extension
+jupyter nbextension enable --py --sys-prefix widgetsnbextension 
+
 # Remove the environnement
+conda env remove -n text_mining
