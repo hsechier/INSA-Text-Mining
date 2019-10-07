@@ -1,7 +1,7 @@
-# Env creation via conda
+# Environment creation via conda
 conda create -n text_mining python=3.5.0 numpy pip matplotlib ipykernel
 
-# Env activation
+# Environment activation
 activate text_mining
 
 # Package Installation
